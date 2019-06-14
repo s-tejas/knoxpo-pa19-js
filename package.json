@@ -1,0 +1,25 @@
+{
+  "name": "simple-nodejs-weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-tejas/knoxpo-pa19-js.git"
+  },
+  "author": "brandon morelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-tejas/knoxpo-pa19-js.git/issues"
+  },
+  "homepage": "https://github.com/s-tejas/knoxpo-pa19-js.git#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}

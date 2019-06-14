@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="container">
+    <fieldset>
+      <form action="/" method="post">
+        <input type="submit" class="ghost-button" value="Get Weather">
+      </form>
+      <% if(weather !== null){ %>
+      <table>
+        <tr>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <% for(var i=0; i < weather.length; i++) { %>
+          <td><%= weather[i] %></td>
+          <% } %>
+        </tr>
+      </table>
+      <% } %>
+
+      <% if(error !== null){ %>
+      <p><%= error %></p>
+      <% } %>
+    </fieldset>
+  </div>
+</body>
+
+</html>
